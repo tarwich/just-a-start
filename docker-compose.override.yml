@@ -1,0 +1,13 @@
+services:
+  postgres:
+    env_file: [.env]
+    ports:
+      - '6001:5432'
+  adminer:
+    env_file: [.env]
+    ports:
+      - '6002:8080'
+  hasura:
+    env_file: [.env]
+    ports:
+      - '6003:8080'
